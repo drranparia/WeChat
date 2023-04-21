@@ -1,4 +1,4 @@
-# messanger_app
+# wechat_app
 
 A new Flutter project.
 
