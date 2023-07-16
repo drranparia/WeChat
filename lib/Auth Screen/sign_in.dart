@@ -15,7 +15,7 @@ import '../Models/user_model.dart';
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
 
-  @override
+  @override 
   State<SignIn> createState() => _SignInState();
 }
 
@@ -27,7 +27,7 @@ class _SignInState extends State<SignIn> {
     super.initState();
     FirebaseMessaging _fbMessaging = FirebaseMessaging.instance; // Change here
     _fbMessaging.getToken().then((token) {
-      print("token is $token");
+      print("token is::: $token");
       tokenId = token;
     });
   }
@@ -97,7 +97,7 @@ class _SignInState extends State<SignIn> {
                     style: appTitle,
                   ),
                   const Text(
-                    'Messenger App',
+                    'WeChat',
                     textAlign: TextAlign.center,
                     style: appTitle,
                   ),

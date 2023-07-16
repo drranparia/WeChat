@@ -11,7 +11,7 @@ mixin AppThemeMixin {
         //         end: Alignment.bottomCenter,
         //         colors: [Color(0xFF5b8bdf), Color(0xFF07c8e5)],
         primaryColor: AColor.black,
-        accentColor: AColor.black,
+        hintColor: AColor.black,
         appBarTheme: const AppBarTheme(
             centerTitle: true,
             elevation: 0,
