@@ -15,7 +15,7 @@ import '../Models/user_model.dart';
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
 
-  @override 
+  @override
   State<SignIn> createState() => _SignInState();
 }
 
@@ -72,6 +72,10 @@ class _SignInState extends State<SignIn> {
         });
       }
     } catch (e) {
+      setState(() {
+        isLoading = false;
+      });
+      print("ERROR::::::::$e");
       CusWidgets.snakBar(context, e.toString(), AColor.warn);
     }
   }
